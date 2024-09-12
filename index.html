@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <span class="logo">
+            <img src="public/logo.png" alt="logo">
+        </span>
+        <form action="" method="get" class="header__search">
+            <input 
+                class="header__input"
+                type="text"
+                placeholder="Поиск по городу"
+            >
+            <button class="header__button" disabled>
+            </button>
+            <button class="header__button_close"></button>
+        </form>
+    </header>
+    <main class="wrapper">
+        <section class="info">
+            <article class="info__prognoz">
+                <p class="info__city">
+                    Москва
+                </p>
+                <p class="info__date">
+                    Суббота, 06 января
+                </p>
+                <p class="info__time">11:29</p>
+            </article>
+            <article class="info__temperature"
+            >
+                -7&#176;
+            </article>
+            <article class="info__state">
+                <p class="info__sky">
+                    <span class="info__icon">
+                        <img    
+                        src="public/weather-icon.png" alt="weather-icon">
+                    </span>
+                    Облачно
+                </p>
+                <p class="info__exrect">
+                    Ощущается как -11&#176;
+                </p>
+            </article>
+        </section>
+        <ul class="cards">
+            <li class="cards__item"></li>
+            <li class="cards__item"></li>
+            <li class="cards__item"></li>
+            <li class="cards__item"></li>
+            <li class="cards__item"></li>
+            <li class="cards__item"></li>
+        </ul>
+    </main>
+    </section>
+    <section class="slider"></section>
+    <footer class="footer"></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
